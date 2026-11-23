@@ -94,10 +94,84 @@ summary{padding-block:5px}
 .project-pair .makecode-graphic{min-height:190px}
 @media(max-width:660px){.makecode-graphic{min-height:120px;padding:8px}}
 @media print{.makecode-graphic{min-height:0;overflow:visible}.self-check{break-inside:avoid}}
+/* Visuelles Werkstatt-Design für Klasse 7–9 */
+:root{--navy:#14243d;--navy-2:#203a62;--paper:#fff;--bg:#f3f7fb;--yellow:#ffd93d;--cyan:#35c6d4;--violet:#7858e8;--pink:#ed5e86;--green:#43b77c;--orange:#ff8c42;--shadow:0 16px 42px #16355714;--soft-shadow:0 8px 22px #16355712}
+body{background:
+radial-gradient(circle at 14% 3%,#bfeff355 0 9%,transparent 22%),
+radial-gradient(circle at 90% 12%,#e7dcff88 0 8%,transparent 21%),
+linear-gradient(180deg,#eef8fb 0,#f7f5ff 48%,#f4f8fb 100%);font-family:ui-rounded,"Avenir Next","Segoe UI",system-ui,sans-serif}
+main{max-width:1160px;padding:32px 24px 64px}
+header,main>section{border:0;border-radius:26px;box-shadow:var(--shadow);padding:34px;margin-bottom:30px}
+header{overflow:hidden;padding-top:0;background:#fff}
+.hero{position:relative;isolation:isolate;margin:0 -34px 28px;padding:38px 38px 34px;overflow:hidden;background:linear-gradient(125deg,#182c4b 0%,#263b78 56%,#5948b5 100%)}
+.hero::before,.hero::after{content:"";position:absolute;z-index:-1;border-radius:50%}
+.hero::before{width:290px;height:290px;right:-72px;top:-120px;background:repeating-radial-gradient(circle,#ffd93d 0 7px,transparent 8px 25px);opacity:.2}
+.hero::after{width:180px;height:180px;right:18%;bottom:-115px;border:34px solid #35c6d4;opacity:.22}
+.hero-eyebrow{display:inline-flex;align-items:center;gap:8px;margin-bottom:13px;padding:6px 12px;border:1px solid #ffffff55;border-radius:999px;background:#ffffff17;color:#fff;font-size:.83rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase}
+.hero-eyebrow::before{content:"";width:9px;height:9px;border-radius:50%;background:var(--yellow);box-shadow:0 0 0 5px #ffd93d25}
+.hero h1{max-width:760px;margin:0;font-size:clamp(2.6rem,7vw,5.2rem);line-height:.92;letter-spacing:-.055em;text-wrap:balance}
+.hero h1 span{color:var(--yellow)}
+.hero p{max-width:720px;margin:20px 0 0;color:#eef7ff;font-size:1.08rem;font-weight:600}
+.hero-badges{display:flex;flex-wrap:wrap;gap:8px;margin-top:20px}
+.hero-badges span{padding:7px 11px;border-radius:10px;background:#fff;color:#263552;font-size:.87rem;font-weight:800;box-shadow:0 5px 16px #07112433}
+.stations-heading{display:flex;align-items:end;justify-content:space-between;gap:16px;margin:4px 0 13px}
+.stations-heading span{font-size:1.3rem;font-weight:900;letter-spacing:-.02em}
+.stations-heading small{color:#5d6a7d;font-size:.9rem;font-weight:650}
+.stations{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:0 0 20px}
+.stations a{position:relative;min-height:104px;padding:16px 16px 14px 66px;border:2px solid transparent;border-radius:18px;background:#f7f9fc;color:var(--navy);box-shadow:var(--soft-shadow);transition:transform .18s ease,box-shadow .18s ease,border-color .18s ease}
+.stations a::before{position:absolute;left:15px;top:16px;display:grid;place-items:center;width:40px;height:40px;border-radius:13px;background:#fff;font-size:1.35rem;box-shadow:0 5px 15px #172c5217}
+.stations a:nth-child(1){background:#fff8c9;border-color:#f1cf27}.stations a:nth-child(1)::before{content:"☀️"}
+.stations a:nth-child(2){background:#e9e4ff;border-color:#9e8af3}.stations a:nth-child(2)::before{content:"🎚️"}
+.stations a:nth-child(3){background:#dcf6ee;border-color:#67c9a4}.stations a:nth-child(3)::before{content:"🌡️"}
+.stations a:nth-child(4){background:#ffe7dc;border-color:#f3a47d}.stations a:nth-child(4)::before{content:"🔥"}
+.stations a:nth-child(5){background:#ffe4ec;border-color:#ee91ad}.stations a:nth-child(5)::before{content:"👀"}
+.stations a:nth-child(6){background:#dff5fb;border-color:#72c8dc}.stations a:nth-child(6)::before{content:"📏"}
+.stations a:hover{transform:translateY(-4px);background:inherit;box-shadow:0 13px 26px #162c5420}
+.stations strong{font-size:1.13rem;font-weight:900}.stations span{color:#445269;font-size:.9rem;font-weight:650}
+.header-actions{display:flex;flex-wrap:wrap;gap:10px;margin:6px 0 28px}
+.header-actions button,.header-actions a{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:10px 15px;border:2px solid #cbd7e6;border-radius:13px;background:#fff;color:#243b60;text-decoration:none;font-weight:850;box-shadow:0 5px 15px #142b5010}
+.header-actions button{border-color:#263b78;background:#263b78;color:#fff}.header-actions button::before{content:"▣";margin-right:8px}
+.header-actions .makecode-action{border-color:#6e4bd4;background:#7858e8;color:#fff}.header-actions .makecode-action::before{content:"◆";margin-right:8px;color:#ffd93d}
+.header-actions a:hover,.header-actions button:hover{transform:translateY(-2px);box-shadow:0 9px 19px #142b5020}
+.intro-heading{display:flex;align-items:center;gap:10px;margin-top:.3em;font-size:1.42rem}.intro-heading::before{content:"⚡";display:grid;place-items:center;width:38px;height:38px;border-radius:12px;background:#fff1a8}
+header>ol{counter-reset:workstep;display:grid;grid-template-columns:repeat(4,1fr);gap:11px;margin:12px 0 25px;padding:0;list-style:none}
+header>ol li{counter-increment:workstep;position:relative;min-height:150px;padding:52px 14px 14px;border:1px solid #dce4ef;border-radius:16px;background:#f8faff;font-size:.94rem;font-weight:600;box-shadow:var(--soft-shadow)}
+header>ol li::before{content:counter(workstep);position:absolute;left:14px;top:13px;display:grid;place-items:center;width:30px;height:30px;border-radius:10px;background:var(--navy-2);color:#fff;font-weight:900}
+header>ol li:nth-child(2)::before{background:var(--violet)}header>ol li:nth-child(3)::before{background:var(--orange)}header>ol li:nth-child(4)::before{background:var(--green)}
+header>h3{display:flex;align-items:center;gap:8px;margin-top:1.25rem;font-size:1.15rem;color:#223b61}header>h3::before{content:"";width:11px;height:11px;border-radius:4px;background:var(--cyan);transform:rotate(45deg)}
+main>section{--accent:#5c77aa;position:relative;border-top:9px solid var(--accent);scroll-margin-top:18px;background:linear-gradient(180deg,color-mix(in srgb,var(--accent) 8%,#fff) 0,#fff 170px)}
+#ldr{--accent:#e8be18}#poti{--accent:#7858e8}#ntc{--accent:#3caf81}#ptc{--accent:#ee854b}#ir{--accent:#e95f89}#ultra{--accent:#2fa8c5}#lehrkraft{--accent:#536a91}
+main>section>h2{display:flex;align-items:center;gap:13px;margin:0 0 18px;font-size:clamp(1.75rem,4vw,2.45rem);letter-spacing:-.035em;color:#192b49}
+main>section>h2::before{display:grid;place-items:center;flex:0 0 auto;width:52px;height:52px;border-radius:17px;background:#fff;font-size:1.55rem;box-shadow:0 7px 20px #162c5420}
+#ldr>h2::before{content:"☀️"}#poti>h2::before{content:"🎚️"}#ntc>h2::before{content:"🌡️"}#ptc>h2::before{content:"🔥"}#ir>h2::before{content:"👀"}#ultra>h2::before{content:"📏"}#lehrkraft>h2::before{content:"🧰"}
+main>section[id]:not(#lehrkraft)>h2+p{font-size:1.06rem;font-weight:580;color:#34455f}
+main>section[id]:not(#lehrkraft)>h2+p+p{padding:12px 14px;border:1px solid color-mix(in srgb,var(--accent) 45%,#dce4ef);border-radius:13px;background:#fff;font-weight:650;box-shadow:var(--soft-shadow)}
+main>section>h3{display:flex;align-items:center;width:fit-content;gap:9px;margin:1.65em 0 .8em;padding:7px 12px 7px 9px;border-radius:11px;background:color-mix(in srgb,var(--accent) 16%,#fff);color:#263b58;font-size:1.17rem;font-weight:900}
+.pair{gap:18px}.pair>div,.project{border:1px solid #dbe4ee;border-radius:18px;padding:16px;background:#fff;box-shadow:var(--soft-shadow)}
+.pair>div>h4{display:flex;align-items:center;gap:7px;font-size:1.08rem;color:#223b61}.pair>div>h4::before{content:"";width:10px;height:10px;border-radius:3px;background:var(--accent)}
+.wiring-figure img{padding:8px;border:1px solid #d8e1ec;border-radius:15px;background:#f9fbfd;box-shadow:inset 0 0 0 1px #fff}
+.wiring-figure figcaption a{display:inline-flex;margin-top:5px;padding:5px 9px;border-radius:8px;background:#edf3f8;text-decoration:none;font-weight:750}
+table{border-collapse:separate;border-spacing:0;overflow:hidden;border:1px solid #dce4ed;border-radius:12px;background:#fff}td,th{border-bottom:1px solid #e1e7ef;padding:7px 9px}tr:last-child td{border-bottom:0}th{background:#eef3f8;color:#2d4263;font-size:.9rem}
+.chain{padding:10px;border-radius:11px;background:#f3f7fb;font-weight:700}
+.question{margin:1.2em 0;padding:15px 16px;border:1px solid #c9bdf5;border-left:6px solid var(--violet);border-radius:15px;background:#f4f0ff;box-shadow:var(--soft-shadow)}
+.question h4::before{content:"?";display:inline-grid;place-items:center;width:24px;height:24px;margin-right:7px;border-radius:8px;background:var(--violet);color:#fff}
+.check{margin:1em 0;padding:15px 16px;border:1px solid #8dd9df;border-left:6px solid var(--cyan);border-radius:15px;background:#e9fbfc;box-shadow:var(--soft-shadow)}.check b::before{content:"✓";display:inline-grid;place-items:center;width:24px;height:24px;margin-right:7px;border-radius:8px;background:#1b9eac;color:#fff}
+details{border-radius:12px}summary{width:fit-content;padding:7px 11px;border-radius:10px;background:#fff;color:#5139a6;box-shadow:0 3px 10px #37266c14;list-style:none}summary::-webkit-details-marker{display:none}summary::before{content:"＋";margin-right:7px}details[open]>summary::before{content:"−"}
+.makecode-graphic{padding:16px;border:2px solid #c8d5e8;border-radius:17px;background:linear-gradient(135deg,#f7f9ff,#eef5ff);box-shadow:inset 0 0 0 1px #fff,0 8px 20px #193b7610}
+.project-pair{grid-template-columns:1fr 1fr}.project-pair>div{position:relative;padding:20px 18px 18px;border-top:6px solid var(--green)}.project-pair>div:nth-child(2){border-top-color:var(--violet)}
+.project-pair>div::before{content:"G · GRUNDLAGE";display:inline-flex;margin-bottom:10px;padding:4px 8px;border-radius:7px;background:#dff7e9;color:#176440;font-size:.76rem;font-weight:900;letter-spacing:.04em}.project-pair>div:nth-child(2)::before{content:"M · MITTLERES NIVEAU";background:#eee9ff;color:#573cac}
+.project-pair+ p{padding:14px 15px!important;border:1px solid #efd66d!important;border-left:6px solid var(--yellow)!important;border-radius:14px;background:#fff9d7;box-shadow:var(--soft-shadow)}
+.self-check{padding:18px;border:2px solid #62be8b;border-radius:18px;background:#eaf9f1;box-shadow:var(--soft-shadow)}.self-check h3{background:transparent!important;padding:0!important}.self-check h3::before{content:"✅";margin-right:8px}.self-check-list label{min-height:52px;border-radius:12px}.self-check-list input{width:23px;height:23px}
+.quartet{gap:11px}.quartet>div{position:relative;min-height:142px;padding:44px 14px 14px;border:0;border-radius:16px;background:#eef5ff;box-shadow:var(--soft-shadow)}.quartet>div::before{position:absolute;left:14px;top:12px;font-size:1.25rem}.quartet>div:nth-child(1){background:#e7f5ff}.quartet>div:nth-child(1)::before{content:"🧠"}.quartet>div:nth-child(2){background:#fff1d7}.quartet>div:nth-child(2)::before{content:"💡"}.quartet>div:nth-child(3){background:#f1eaff}.quartet>div:nth-child(3)::before{content:"💬"}.quartet>div:nth-child(4){background:#e4f8ee}.quartet>div:nth-child(4)::before{content:"🤝"}.quartet h4{font-size:1.04rem}
+.toplink{display:inline-flex;padding:8px 12px;border-radius:10px;background:#eef3f8;text-decoration:none;font-weight:800}
+a{color:#3256a8}.fine{font-size:.92rem;color:#445269}
+@media(max-width:860px){header>ol{grid-template-columns:1fr 1fr}.project-pair{grid-template-columns:1fr}.stations a{padding-left:60px}}
+@media(max-width:660px){main{padding:12px 10px 44px}header,main>section{padding:19px;border-radius:19px}.hero{margin:0 -19px 22px;padding:26px 20px 24px}.hero h1{font-size:clamp(2.55rem,14vw,4.2rem)}.hero p{font-size:1rem}.hero-badges{gap:6px}.hero-badges span{font-size:.79rem}.stations-heading{align-items:start;flex-direction:column;gap:2px}.stations{grid-template-columns:1fr 1fr;gap:8px}.stations a{min-height:96px;padding:13px 10px 11px 50px;border-radius:14px}.stations a::before{left:10px;top:12px;width:33px;height:33px;border-radius:10px;font-size:1.05rem}.stations strong{font-size:1rem}.stations span{font-size:.8rem}.header-actions>*{width:100%}header>ol{grid-template-columns:1fr}header>ol li{min-height:0;padding:14px 14px 14px 55px}.pair{grid-template-columns:1fr}main>section>h2{align-items:flex-start}main>section>h2::before{width:43px;height:43px;border-radius:13px;font-size:1.25rem}.quartet{grid-template-columns:1fr}.quartet>div{min-height:0}}
+@media print{body{background:#fff}.hero{background:#fff!important}.hero-eyebrow,.hero-badges,.stations-heading,.header-actions{display:none!important}header,main>section,.pair>div,.project,.question,.check,.self-check,.quartet>div{box-shadow:none!important}main>section{background:#fff!important;border-top:0}.project-pair{grid-template-columns:1fr 1fr}.project-pair>div::before{display:none}}
 </style><main>
-<header id="start"><div class="hero"><h1>micro:bit<br>Sensorwerkstatt</h1><p>Sechs Lernstraßen für Klasse 7–9 · ca. 35–45 Minuten je Station · Teams zu zweit</p></div>
-<nav class="stations" aria-label="Sensorstationen"><a href="#ldr"><strong>LDR</strong><span>Licht messen</span></a><a href="#poti"><strong>Poti</strong><span>Drehstellung messen</span></a><a href="#ntc"><strong>NTC</strong><span>Wärme erkennen</span></a><a href="#ptc"><strong>PTC</strong><span>Wärme erkennen</span></a><a href="#ir"><strong>IR-Modul</strong><span>Gegenstände erkennen</span></a><a href="#ultra"><strong>Ultraschall</strong><span>Abstand messen</span></a></nav>
-<p><button onclick="window.print()">Drucken / als PDF sichern</button> <a href="https://makecode.microbit.org/?lang=de">MakeCode öffnen</a> <a href="#lehrkraft">Vorbereitung für die Lehrkraft</a></p>
+<header id="start"><div class="hero"><div class="hero-eyebrow">Messen · Coden · Tüfteln</div><h1><span>micro:bit</span><br>Sensorwerkstatt</h1><p>Sechs Lernstraßen für Klasse 7–9 · ca. 35–45 Minuten je Station · Teams zu zweit</p><div class="hero-badges"><span>🔌 echt aufbauen</span><span>🧩 blockbasiert coden</span><span>🧪 testen & verbessern</span><span>🤝 im Team arbeiten</span></div></div>
+<div class="stations-heading"><span>Wählt eure Sensor-Mission</span><small>Antippen und direkt zur Lernstraße springen</small></div><nav class="stations" aria-label="Sensorstationen"><a href="#ldr"><strong>LDR</strong><span>Licht messen</span></a><a href="#poti"><strong>Poti</strong><span>Drehstellung messen</span></a><a href="#ntc"><strong>NTC</strong><span>Wärme erkennen</span></a><a href="#ptc"><strong>PTC</strong><span>Wärme erkennen</span></a><a href="#ir"><strong>IR-Modul</strong><span>Gegenstände erkennen</span></a><a href="#ultra"><strong>Ultraschall</strong><span>Abstand messen</span></a></nav>
+<div class="header-actions"><button onclick="window.print()">Als Arbeitsblatt drucken</button><a class="makecode-action" href="https://makecode.microbit.org/?lang=de">MakeCode öffnen</a><a href="#lehrkraft">Lehrkraft-Bereich</a></div>
 <h2 class="intro-heading">So arbeitet ihr</h2><ol><li>Lest, was der Sensor misst. Eine Person steckt, die andere gleicht jede Leitung mit der Tabelle ab.</li><li>Wählt zuerst den Breadboard-Aufbau oder die Direktverbindung. Übertragt das Testprogramm. Prüft die Reaktion am echten Sensor.</li><li>Zieht den Strom ab und baut dieselbe Schaltung in der anderen Variante auf. Ladet das Programm erneut, falls sich ein anderes Projekt auf dem micro:bit befindet. Prüft dieselbe Reaktion.</li><li>Wählt ein Miniprojekt. Baut die Blöcke nach, testet die verlangten Fälle und zeigt das Ergebnis einem anderen Team.</li></ol>
 <h3>Für jeden Aufbau</h3><p>micro:bit mit USB-Datenkabel, Breadboard, Steckleitungen und Krokoklemmen. Bei den großen Ringen steht <b>0</b> für P0, <b>1</b> für P1 und <b>2</b> für P2. Direktaufbau bedeutet, dass der Sensor bzw. der Spannungsteiler über Leitungen an den großen Ringen hängt. Haltet die blanken Klemmen und Bauteilbeinchen auseinander. Beim Umstecken USB und Batteriefach abziehen. 3V und GND dürfen sich nicht berühren. Externe 5-V-Signale gehören nicht an die Signalpins.</p>
 <h3>MakeCode in einer Minute</h3><p>Neues Projekt → <b>Blöcke</b>. <b>Grundlagen</b> enthält „dauerhaft“, Anzeige und Pause. <b>Eingabe</b> enthält das Ereignis für Knopf A oder B. <b>Fortgeschritten → Pins</b> enthält die analogen und digitalen Leseblöcke. Unter <b>Variablen</b> legst du Messwerte und Grenzen an, unter <b>Logik</b> findest du Vergleiche und wenn/sonst. Ein eingerückter Block gehört in den Block darüber. Die Blockgrafiken werden direkt mit dem offiziellen deutschen MakeCode-Renderer erzeugt und entsprechen den Blöcken im Editor. Sonar kann wegen der Erweiterung einen englischen Blocknamen anzeigen.</p>
