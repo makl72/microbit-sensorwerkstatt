@@ -13,8 +13,6 @@ Enthalten sind realistische Direkt- und Breadboard-Aufbauten, deutsche MakeCode-
 
 ## Website
 
-Nach der Veröffentlichung über GitHub Pages:
-
 https://makl72.github.io/microbit-sensorwerkstatt/
 
 ## Quellen der Bauteilgrafiken
